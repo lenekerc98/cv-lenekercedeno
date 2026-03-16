@@ -130,3 +130,12 @@ li {
         border-color: #000;
     }
 }
+a {
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
