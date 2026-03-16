@@ -23,16 +23,20 @@ body {
     margin: 0 auto;
     background: #fff;
     padding: 40px 50px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-wrapper {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .header-center {
+    flex: 1;
     text-align: center;
+    padding: 0 20px;
 }
 
 h1 {
@@ -54,9 +58,15 @@ h1 {
 }
 
 .header-right {
-    position: absolute;
-    right: 0;
-    top: 5px;
+    flex: 0 0 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-left {
+    flex: 0 0 120px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .profile-img {
@@ -65,6 +75,12 @@ h1 {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #000;
+}
+
+.qr_Github-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
 }
 
 .profile-summary p {
@@ -121,21 +137,14 @@ li {
         background-color: transparent;
         padding: 0;
     }
+
     .container {
         box-shadow: none;
         padding: 0;
         max-width: 100%;
     }
+
     .profile-img {
         border-color: #000;
     }
-}
-a {
-    transition: color 0.3s ease;
-    font-weight: 600;
-}
-
-a:hover {
-    color: #2980b9;
-    text-decoration: underline;
 }
